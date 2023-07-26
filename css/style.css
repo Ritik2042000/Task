@@ -1,0 +1,1166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.dls-flx {
+    display: flex;
+}
+
+.al-center {
+    align-items: center;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.jc-btw {
+    justify-content: space-between !important;
+}
+
+.jc-spa {
+    justify-content: space-around !important;
+}
+
+
+.col-33 {
+    width: 33%;
+}
+
+.container-100 {
+    width: 100%;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bg-discount {
+    background-color: #01AAC9;
+}
+
+.discount {
+    /* width: 100%; */
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    font-family: Montserrat;
+}
+.discount span{
+    text-decoration-line: underline;
+}
+
+.bg-locatio {
+    width: 100% !important;
+    background: #EFEFEF;
+}
+
+.loc-store {
+    width: 95%;
+    margin: 0px auto;
+    font-weight: 600;
+    font-family: Montserrat;
+}
+
+.dropdown {
+    border: none;
+    font-family: Montserrat;
+    font-weight: 600;
+    background: #EFEFEF;
+}
+
+.help-find-blog li a {
+    color: #000;
+    padding: 5px;
+}
+
+
+.logo {
+    width: 25%;
+}
+
+.logo img {
+    width: 42%;
+}
+
+.nav-links li a {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+.nav-right-content {
+    margin: 0px 0px;
+}
+.search{
+
+    position: relative;
+}
+.search input {
+    width: 80%;
+    border-radius: 50px;
+    padding: 3px;
+}
+.search-bar{
+    position: absolute;
+    top:-3px;
+    right: 40px;
+}
+
+.ham-menu {
+    display: none;
+}
+
+.hamburger-btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    z-index: 9999;
+}
+
+.hamburger-btn::before,
+.hamburger-btn::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+}
+
+.hamburger-btn::before {
+    top: 0;
+}
+
+.hamburger-btn::after {
+    bottom: 0;
+}
+
+
+/* <----card-slider--------> */
+
+.sec_1 {
+    background-image: url("../images/home_bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 90px 0;
+}
+
+.my_slider {
+    margin: 100px 0;
+    padding: 10px 0;
+}
+
+.my_slider .slick-dots li button:before {
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: #fff !important;
+}
+
+.my_slider .slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #fff !important;
+}
+
+.col_100 {
+    width: 100%;
+}
+
+.sec_1_text {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sec_1_text h1 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    margin: 30px 0;
+    position: relative;
+}
+
+.sec_1_text h1::after {
+    content: "";
+    width: 100px;
+    height: 10px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+}
+
+.sec_1_text p {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    padding: 20px 0;
+}
+
+.sec_1_text .btn a {
+    display: inline-block;
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background-color: #fff;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* section 2  */
+
+.featured-categories {
+    padding: 50px 0;
+    position: relative;
+}
+
+.featured-categories {
+    font-family: Montserrat;
+    padding: 50px 0px 50px 0px;
+}
+.cycle-img{
+    position: absolute;
+    right: 60%;
+    z-index: -1;
+   
+}
+.cycle-img img{
+    width: 70%;
+}
+.fea-cate{
+    padding: 20px 0;
+
+}
+.fea-cate h2::after {
+    content: "";
+    width: 100px;
+    height: 10px;
+    border-radius: 10px;
+    position: absolute;
+    left: 3%;
+    top: 17%;
+    background-color: #01AAC9;
+}
+
+.all-categories p {
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    text-decoration: underline #01AAC9;
+    text-transform: uppercase;
+}
+
+.card {
+    width: 23%;
+    border-radius: 20px;
+    border: 1px solid #01AAC9;
+    margin: 10px 20px 10px 0px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.card:hover {
+    box-shadow: 5px 3px 5px #01AAC9;
+}
+
+.card-img img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.card-data {
+    margin: 0 10px;
+}
+
+.card-data h3 {
+    color: #01AAC9;
+    margin: 10px 0px;
+}
+
+.card-data span {
+    color: #01AAC9;
+    margin: 10px 0px;
+}
+
+.card-data p {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px 0px;
+}
+
+
+/* <----section-3 slidde-2----> */
+
+.svg-container {
+    position: relative;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popular-right {
+    position: absolute;
+    z-index: 9999;
+    top: 55px;
+    left: 79px;
+    font-family: Montserrat;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+.popular-right h3::after {
+    content: "";
+    width: 100px;
+    height: 10px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background-color: #01AAC9;
+    z-index: 9999;
+}
+
+.first-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 730px;
+    z-index: 2;
+}
+
+.second-svg {
+    position: absolute;
+    top: -35px;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    z-index: 1;
+}
+
+.third-svg {
+    z-index: 3;
+}
+
+.fourth-svg {
+    position: absolute;
+    z-index: 3;
+    right: 100px;
+    bottom: 40px;
+}
+
+.slider_box {
+    position: absolute;
+    z-index: 3;
+    padding: 30px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card2 {
+    width: 20%;
+    border-radius: 20px;
+    border: 1px solid #01AAC9;
+    margin: 5px 20px 5px 0px;
+    cursor: pointer;
+    background-color: #FFF;
+}
+
+.card-image img {
+    display: block;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.fa-star {
+    color: yellow;
+}
+
+.fa-circle-arrow-left,
+.fa-circle-arrow-right {
+    color: #01AAC9;
+    border: none;
+    font-size: 25px;
+}
+
+.prev,
+.next {
+    border: none;
+}
+
+.card-content {
+    font-family: Montserrat;
+    text-align: center;
+}
+
+.card-content p {
+    margin: 15px 0px;
+}
+
+.name {
+    font-size: 16px;
+    margin: 5px 0px;
+}
+
+.star-price {
+    margin: 5px 8px;
+    padding: 15px 5px;
+}
+
+/* section-bike */
+
+.col-60 {
+    width: 60%;
+}
+
+.col-40 {
+    width: 40%;
+}
+
+
+.col-33 {
+    width: 33%;
+    text-align: center;
+}
+
+.advantages {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.advantages h3 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    position: relative;
+}
+
+.advantages h3::after {
+    content: "";
+    width: 100px;
+    height: 10px;
+    border-radius: 10px;
+    position: absolute;
+
+    bottom: -30px;
+    left: 0;
+    background-color: #01AAC9;
+}
+
+
+.star-logo {
+    width: 45%;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.star-logo svg {
+    margin-top: 90px;
+}
+
+.star-logo p {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+.cart-todo {
+    display: flex;
+    flex-direction: column;
+    /* text-align: right; */
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-todo p {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+.sec4-wrapp {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.custmor-care {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.custmor-care p {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 64px;
+    margin: 13px 0px;
+}
+
+.my_slider_1.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #01AAC9 !important;
+}
+
+.slider-wrapper {
+    position: relative;
+}
+
+
+.dots ul {
+    display: flex;
+
+}
+
+/* Mobile (max-width: 576px) */
+@media (max-width:576px) {
+    .logo{
+        width: 50% !important;
+    }
+    
+    .logo img {
+        width: 53% !important;
+        object-fit: contain;
+        height: 30px;
+    }
+
+    .sec_1 {
+        background-size: 100% 100%;
+        object-fit: cover;
+        padding: 0;
+    }
+
+    .sec_1_text h1 {
+        font-size: 35px;
+        line-height: 30px;
+    }
+
+    .sec_1_text p {
+        font-size: 20px;
+    }
+
+    .my_slider {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar {
+        height: 30px;
+    }
+
+    .nav-links li a {
+        font-size: 14px;
+    }
+
+    .hamburger-btn {
+        display: block;
+        height: 23px;
+        top: 6px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 30px;
+        right: 0;
+        background-color: #EFEFEF;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        padding: 10px;
+        display: block;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .hamburger-btn.active::before {
+        transform: rotate(-45deg);
+        top: 12px;
+    }
+
+    .hamburger-btn.active::after {
+        transform: rotate(45deg);
+        bottom: 12px;
+    }
+
+    /* section2 */
+    .card {
+        width: 100% !important;
+    }
+    .cycle-img{
+        display: none;
+    }
+
+    /* section3 */
+    .card2 {
+        width: 50%;
+    }
+
+    .first-svg {
+        display: none;
+    }
+    
+    .second-svg {
+        display: none;
+
+    }
+
+    .card-content {
+        font-size: 13px;
+    }
+
+    .card-image img {
+        width: 100% !important;
+        height: 200px !important;
+        object-fit: contain !important;
+    }
+
+    .svg-container {
+        width: 100%;
+        position: relative;
+        height: 100vh !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popular-right {
+        top: 0 !important;
+        left: 5px !important;
+
+    }
+
+    .popular-right h3 {
+        font-size: 25px;
+
+    }
+
+    .popular-right h3::after {
+        height: 5px;
+        top: 50px;
+    }
+
+    .slider_box {
+        position: absolute;
+        top: 37px;
+    }
+
+    .dots {
+        display: none;
+    }
+
+    /* section4 */
+
+    .col-40 {
+        width: 100%;
+    }
+
+    .col-60 {
+        width: 100%;
+        ;
+    }
+
+    .advantages {
+        padding: 100px 0px 0px 0px;
+    }
+
+    .advantages h3 {
+        font-size: 16px !important;
+    }
+
+    .advantages h3::after {
+        height: 5px;
+        width: 30%;
+    }
+
+    .star-logo {
+        display: none;
+    }
+
+    .bicycle img {
+        width: 100%;
+    }
+
+    .col-33 {
+        width: 100% !important;
+    }
+
+    .col-33 svg {
+        width: 80%;
+        height: 100px;
+    }
+
+    .cart-todo {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .cart-todo p {
+        font-size: 14px;
+    }
+
+    .custmor-care svg {
+        width: 60%;
+        height: 100px;
+    }
+
+    .custmor-care p {
+        font-size: 10px;
+    }
+}
+
+/*  Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .col-33 {
+        width: 50%;
+    }
+
+    .logo img {
+        width: 40%;
+    }
+
+    .nav-links li a {
+        font-size: 13px;
+    }
+
+    .ham-menu {
+        display: block;
+    }
+
+    .hamburger-btn {
+        height: 23px;
+        top: 6px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 30px;
+        right: 0;
+        background-color: #eef2f7;
+        width: 100%;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        padding: 10px;
+        display: block;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .hamburger-btn.active::before {
+        transform: rotate(-45deg);
+        top: 12px;
+    }
+
+    .hamburger-btn.active::after {
+        transform: rotate(45deg);
+        bottom: 12px;
+    }
+
+    .nav-right-content {
+        display: none
+    }
+
+    /* section3 */
+
+    .card2 {
+        width: 50%;
+    }
+
+    .first-svg {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+
+    .second-svg {
+        height: 140vh !important;
+    }
+
+    .card-content {
+        font-size: 13px;
+    }
+
+    .card-image img {
+        width: 100% !important;
+        height: 200px !important;
+        object-fit: contain !important;
+    }
+
+    .svg-container {
+        width: 100%;
+        position: relative;
+        height: 100vh !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popular-right {
+        top: 0 !important;
+        left: 5px !important;
+
+    }
+
+    .popular-right h3 {
+        font-size: 25px;
+
+    }
+
+    .popular-right h3::after {
+        height: 5px;
+        top: 50px;
+    }
+
+    .slider_box {
+        position: absolute;
+        top: 37px;
+    }
+
+}
+
+/* Desktops (max-width: 992px) */
+@media (max-width: 992px) {
+    .container {
+        width: 90%;
+    }
+
+    .discount {
+        display: none;
+    }
+
+    .loc-store {
+        display: none;
+    }
+
+    .col-33 {
+        width: 33.33%;
+    }
+
+    .col-60 {
+        width: 60%;
+    }
+
+    .card {
+        width: 40%;
+    }
+
+    .card-content {
+        font-size: 13px;
+    }
+
+    .card-image img {
+        width: 200px;
+        height: 80px;
+    }
+
+    .svg-container {
+        width: 100%;
+        position: relative;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popular-right {
+        top: 10px;
+        left: 79px;
+        font-size: 25px;
+
+    }
+
+    .popular-right h3::after {
+        height: 5px;
+        top: 50px;
+    }
+
+    .slider_box {
+        position: absolute;
+        top: 37px;
+    }
+
+    .first-svg {
+        width: 100%;
+        /* width: 100%; */
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 120vh;
+
+    }
+
+    .second-svg {
+        width: 100%;
+        position: absolute;
+        top: -35px;
+        left: 0;
+        width: 100%;
+        height: 125vh;
+    }
+
+    .third-svg {
+        display: none;
+    }
+
+    .fourth-svg {
+        display: none;
+    }
+
+    .col-40 {
+        width: 40%;
+    }
+
+    .col-60 {
+        width: 60%;
+    }
+
+    .advantages {
+        width: 90%;
+    }
+
+    .advantages h3 {
+        font-size: 30px;
+    }
+
+    .advantages h3::after {
+        top: 55px
+    }
+
+    .col-33 {
+        width: 33%;
+    }
+
+    .bicycle img {
+        width: 100%;
+    }
+    .cycle-img{
+        display: none;
+    }
+}
+
+/* Large Desktops (max-width: 1200px) */
+@media (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+
+    .logo img {
+        width: 30%;
+    }
+
+    .nav-links li a {
+        font-size: 15px;
+    }
+
+    .logo {
+        width: 15%;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    
+
+    .nav-links li a {
+        font-size: 10px;
+    }
+
+    .nav-right-content {
+        width: 30%;
+    }
+
+    .icons {
+        width: 70%;
+    }
+
+    .card {
+        width: 20%;
+    }
+
+    .card2 {
+        width: 20%;
+    }
+
+    .card-image img {
+        width: 200px;
+        height: 100px;
+    }
+
+    .svg-container {
+        width: 100%;
+        position: relative;
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popular-right {
+        position: absolute;
+        z-index: 9999;
+        top: 130px;
+        left: 79px;
+        font-family: Montserrat;
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 64px;
+    }
+
+
+    .first-svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 730px;
+
+    }
+
+    .second-svg {
+        position: absolute;
+        top: -35px;
+        left: 0;
+        width: 100%;
+        height: 800px;
+
+    }
+
+    .third-svg {
+        /* width: 90%; */
+        height: 60%;
+        position: absolute;
+
+    }
+
+    .fourth-svg {
+        /* width: 90%; */
+        height: 50%;
+        position: absolute;
+
+        right: 0;
+        bottom: 160px;
+    }
+
+    .col-40 {
+        width: 40%;
+    }
+
+    .col-60 {
+        width: 60%;
+    }
+
+    .advantages {
+        width: 90%;
+    }
+
+    .advantages h3 {
+        font-size: 30px;
+    }
+
+    .advantages h3::after {
+        top: 55px
+    }
+
+    .col-33 {
+        width: 33%;
+    }
+
+    .bicycle img {
+        width: 100%;
+    }
+
+}
