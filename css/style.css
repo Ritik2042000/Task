@@ -606,19 +606,22 @@ li {
 
 .dots ul {
     display: flex;
-
 }
 
 /* Mobile (max-width: 576px) */
 @media (max-width:576px) {
+    .container {
+        width: 95%;
+        margin: 0 auto;
+    }
+
     .logo {
         width: 50%;
     }
 
     .logo img {
-        width: 53%;
-        object-fit: contain;
-        height: 30px;
+        width: 90% !important;
+        height: 32px;
     }
 
     .discount {
@@ -650,7 +653,7 @@ li {
     }
 
     .navbar {
-        height: 30px;
+        height: 38px;
     }
 
     .nav-links li a {
@@ -671,7 +674,7 @@ li {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 30px;
+        top: 36px !important;
         right: 0;
         background-color: #EFEFEF;
         width: 100%;
@@ -715,8 +718,18 @@ li {
         display: none;
     }
 
+    .fea-cate h2 {
+        font-size: 17px;
+    }
+
+    .all-categories p {
+        font-size: 15px;
+    }
+
     .fea-cate h2::after {
-        top: 4%;
+        height: 5px;
+        width: 15%;
+        top: 5%;
         left: 5%;
     }
 
@@ -755,7 +768,7 @@ li {
     .svg-container {
         width: 100%;
         position: relative;
-        height: 100vh !important;
+        height: 75vh !important;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -798,11 +811,11 @@ li {
     }
 
     .advantages {
-        padding: 100px 0px 0px 0px;
+        padding: 20px 0px 0px 0px;
     }
 
     .advantages h3 {
-        font-size: 16px !important;
+        font-size: 13px !important;
     }
 
     .advantages h3::after {
@@ -852,12 +865,21 @@ li {
         width: 90%;
     }
 
+    .logo img {
+        width: 80%;
+        height: 38px;
+    }
+
     .discount {
         display: none;
     }
 
     .loc-store {
         display: none;
+    }
+
+    .navbar {
+        height: 40px;
     }
 
     .col-33 {
@@ -873,7 +895,7 @@ li {
     }
 
     .hamburger-btn {
-        height: 23px;
+        height: 19px;
         top: 6px;
     }
 
@@ -881,10 +903,11 @@ li {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 30px;
+        top: 38px !important;
         right: 0;
         background-color: #eef2f7;
         width: 100%;
+        z-index: 999;
     }
 
     .nav-links li {
@@ -921,6 +944,11 @@ li {
 
     .card-content {
         font-size: 13px;
+    }
+
+    .fea-cate h2::after {
+        top: 10%;
+        left: 5%;
     }
 
     .card-image img {
@@ -1013,7 +1041,185 @@ li {
     }
 }
 
-/* small Desktops (min-width: 992px) */
+/* Big Tablets (max-width: 992px) */
+
+@media (max-width: 991px) {
+    .container {
+        width: 90%;
+    }
+
+    .discount {
+        display: none;
+    }
+
+    .logo img {
+        width: 80%;
+        height: 38px;
+    }
+
+    .navbar {
+        height: 40px;
+    }
+
+    .loc-store {
+        display: none;
+    }
+
+    .col-33 {
+        width: 33.33%;
+    }
+
+    .col-60 {
+        width: 60%;
+    }
+
+    .ham-menu {
+        display: block;
+    }
+
+    .hamburger-btn {
+        height: 19px;
+        top: 6px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 38px !important;
+        right: 0;
+        background-color: #eef2f7;
+        width: 100%;
+        z-index: 999;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        padding: 10px;
+        display: block;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .hamburger-btn.active::before {
+        transform: rotate(-45deg);
+        top: 12px;
+    }
+
+    .hamburger-btn.active::after {
+        transform: rotate(45deg);
+        bottom: 12px;
+    }
+
+    .nav-right-content {
+        display: none
+    }
+
+    .card {
+        width: 40%;
+    }
+
+    .card-content {
+        font-size: 13px;
+    }
+
+    .card-image img {
+        width: 200px;
+        height: 80px;
+    }
+
+    .fea-cate h2::after {
+        top: 10%;
+        left: 5%;
+    }
+
+    .svg-container {
+        width: 100%;
+        position: relative;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popular-right {
+        top: 10px;
+        left: 79px;
+        font-size: 25px;
+
+    }
+
+    .popular-right h3::after {
+        height: 5px;
+        top: 50px;
+    }
+
+    .slider_box {
+        position: absolute;
+        top: 37px;
+    }
+
+    .first-svg {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 120vh;
+
+    }
+
+    .second-svg {
+        display: none;
+    }
+
+    .third-svg {
+        display: none;
+    }
+
+    .fourth-svg {
+        display: none;
+    }
+
+    .col-40 {
+        width: 40%;
+    }
+
+    .col-60 {
+        width: 60%;
+    }
+
+    .advantages {
+        width: 90%;
+    }
+
+    .advantages h3 {
+        font-size: 30px;
+    }
+
+    .advantages h3::after {
+        top: 55px
+    }
+
+    .col-33 {
+        width: 33%;
+    }
+
+    .bicycle img {
+        width: 100%;
+    }
+
+    .cycle-img {
+        display: none;
+    }
+
+}
+
 @media (min-width: 992px) {
     .container {
         width: 95%;
