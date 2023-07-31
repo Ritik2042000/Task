@@ -729,7 +729,7 @@ li {
     .fea-cate h2::after {
         height: 5px;
         width: 15%;
-        top: 5%;
+        top: 5% !important;
         left: 5%;
     }
 
